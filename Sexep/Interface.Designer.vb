@@ -34,10 +34,9 @@ Partial Class Form1
         Me.Label1 = New System.Windows.Forms.Label()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
+        Me.Label4 = New System.Windows.Forms.Label()
         Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
         Me.OpenFileDialog2 = New System.Windows.Forms.OpenFileDialog()
-        Me.SaveFileDialog1 = New System.Windows.Forms.SaveFileDialog()
-        Me.Label4 = New System.Windows.Forms.Label()
         Me.TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
         Me.TabPage2.SuspendLayout()
@@ -159,16 +158,6 @@ Partial Class Form1
         Me.TabPage2.Text = "Make Patch"
         Me.TabPage2.UseVisualStyleBackColor = True
         '
-        'OpenFileDialog1
-        '
-        Me.OpenFileDialog1.FileName = "OpenFileDialog1"
-        Me.OpenFileDialog1.Filter = "ELF files|*.elf"
-        '
-        'OpenFileDialog2
-        '
-        Me.OpenFileDialog2.FileName = "OpenFileDialog2"
-        Me.OpenFileDialog2.Filter = "Switch eXecutable Patch Delta|*.sxpd"
-        '
         'Label4
         '
         Me.Label4.AutoSize = True
@@ -178,6 +167,16 @@ Partial Class Form1
         Me.Label4.Size = New System.Drawing.Size(543, 85)
         Me.Label4.TabIndex = 0
         Me.Label4.Text = "Coming soon..."
+        '
+        'OpenFileDialog1
+        '
+        Me.OpenFileDialog1.FileName = "main"
+        Me.OpenFileDialog1.Filter = "ELF files|*.elf"
+        '
+        'OpenFileDialog2
+        '
+        Me.OpenFileDialog2.FileName = "Select a patch..."
+        Me.OpenFileDialog2.Filter = "Switch eXecutable Patch Delta|*.sxpd"
         '
         'Form1
         '
@@ -210,6 +209,5 @@ Partial Class Form1
     Friend WithEvents TextBox1 As TextBox
     Friend WithEvents OpenFileDialog1 As OpenFileDialog
     Friend WithEvents OpenFileDialog2 As OpenFileDialog
-    Friend WithEvents SaveFileDialog1 As SaveFileDialog
     Friend WithEvents Label4 As Label
 End Class
